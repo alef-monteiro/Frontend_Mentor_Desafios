@@ -1,0 +1,48 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(./images/pattern-background-desktop.svg) no-repeat;
+  background-color: #e0e8ff;
+}
+
+.container {
+  width: 350px;
+  background-color: #f5f7ff;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.apresentacao__informacao {
+  text-align: center;
+}
+
+/* Apresentacao */
+.apresentacao__box {
+}
+
+.apresentacao__titulo {
+}
+.apresentacao__descricao {
+}
+
+/* Caixa de Plano */
+.produto__caixa {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(225, 100%, 98%);
+}
+
+/* Imagem */
+.apresentacao__imagem {
+  width: 100%;
+}
