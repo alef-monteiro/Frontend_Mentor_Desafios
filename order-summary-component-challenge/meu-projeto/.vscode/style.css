@@ -68,19 +68,8 @@
   align-items: center;
   justify-content: space-between;
   background-color: #f5f7ff;
-  transition: background-color 0.2s ease-in-out;
   padding: 8% 6%;
   border-radius: 10px;
-}
-
-.produto__caixa:hover {
-  background-color: #6cff52;
-  transition: background-color 0.2s ease-in-out;
-}
-.produto__caixa:active {
-  background-color: #26ff00;
-  transition: background-color 0.2s ease-in-out;
-  box-shadow: 0px 0px 8px 0px #00ff3372;
 }
 
 .produto__valores__caixa {
@@ -159,4 +148,34 @@
 .compra__cancelamento:active,
 .compra__cancelamento:hover {
   color: #1f2f56;
+}
+
+/* Responsividade --------------------------------------------------------------------------------- */
+
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+
+  .produto__valores__caixa {
+    display: flex;
+    align-items: center;
+  }
+
+  .preço__box {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .valor__classe {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .produto__valor {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #7280a7;
+  }
 }
