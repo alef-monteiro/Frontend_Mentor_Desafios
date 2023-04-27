@@ -122,12 +122,13 @@ font-family: 'Montserrat', sans-serif;
 
 /* Responsividade */
 
-@media (min-width: 360px) and (max-width: 800px) {
+@media (min-width: 300px) and (max-width: 800px) {
   .container__parent {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .container {
     display: flex;
     flex-direction: column;
@@ -165,7 +166,10 @@ font-family: 'Montserrat', sans-serif;
   }
 
   /* Valores */
-
+  .produto__valores {
+    display: flex;
+    justify-content: center;
+  }
   .valor__atual {
     font-size: 1.8rem;
   }
