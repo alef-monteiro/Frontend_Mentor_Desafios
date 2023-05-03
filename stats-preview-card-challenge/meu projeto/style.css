@@ -6,3 +6,38 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+}
+
+.container__parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+
+  background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+  display: flex;
+  width: 800px;
+  background-color: hsl(244, 38%, 16%);
+}
+
+.apresentacao__container {
+  display: flex;
+  flex-direction: column;
+  padding: 5%;
+}
+
+.apresentacao__numeros {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.imagem__principal {
+  width: 100%;
+}
