@@ -31,6 +31,9 @@ The designs were created to the following widths:
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
 - Weights: 400, 700
+  font-family: 'Inter', sans-serif;
 
 - Family: [Lexend Deca](https://fonts.google.com/specimen/Lexend+Deca)
 - Weights: 400
+
+font-family: 'Lexend Deca', sans-serif;
