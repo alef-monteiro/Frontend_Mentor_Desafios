@@ -20,62 +20,87 @@
     <title>Frontend Mentor | Results summary component</title>
   </head>
 
-<body>
-      <div class="container__parent">
-        <div class="container">
-
-  <!-- RESUTALDO BOX -->
-          <section class="resutado__box">
-            <h3 class="resultado__titulo">Your Result</h3>
-            <div class="resultado__score">76 of 100</div>
-            <div class="resultado__descricao">
-              <h3>Great</h3>
-              <p class="resultado__descricao">
-                You scored higher than 65% of the people who have taken these tests.
-              </p>
+  <body>
+    <div class="container__parent">
+      <div class="container">
+        <!-- RESUTALDO BOX -->
+        <section class="resultado__box">
+          <h3 class="resultado__titulo">Your Result</h3>
+          <div class="resultado__score">
+            <!-- CIRCULO RESULTADO -->
+            <div class="circulo">
+              <div class="total__box">
+                <h1 class="resultado__total">76</h1>
+                <p class="resultado__qtd">of 100</p>
+              </div>
+            </div>
           </div>
-          </section>
-  
-  <!-- SUMÁRIO BOX -->
-          <section class="sumario__box">
-            <h3 class="sumario__titulo">Summary</h3>
-            <div class="resultado__pontos">
-              <div class="categoria   resultado__reaction">
+          <!-- DESCRIÇÃO RESULTADO -->
+          <div class="resultado__descricao-box">
+            <h2 class="resultado__classificacao">Great</h2>
+            <p class="resultado__descricao">
+              You scored higher than 65% of the people who have taken these
+              tests.
+            </p>
+          </div>
+        </section>
+
+        <!-- SUMÁRIO BOX -->
+        <section class="sumario__box">
+          <h3 class="sumario__titulo">Summary</h3>
+          <!-- PORTUAÇÃO -->
+          <div class="resultado__pontos">
+            <div class="categoria resultado__reaction">
+              <div class="classe__box">
                 <img
                   class="resultado__icon"
                   src="./assets/images/icon-reaction.svg" />
-                <p class="resultado__categoria">Reaction</p>
-                <p class="resultado__nota"><strong>80</strong> / 100</p>
+                <p class="resultado__questoes">Reaction</p>
               </div>
-  
-              <div class="categoria   resultado__memory">
+              <p class="resultado__nota">
+                <strong>80</strong> <span class="total__questoes">/ 100</span>
+              </p>
+            </div>
+
+            <div class="categoria resultado__memory">
+              <div class="classe__box">
                 <img
                   class="resultado__icon"
                   src="./assets/images/icon-memory.svg" />
-                <p class="resultado__categoria">Memory</p>
-                <p class="resultado__nota"><strong>92</strong> / 100</p>
+                <p class="resultado__questoes">Memory</p>
               </div>
-  
-              <div class="categoria   resultado__verbal">
+              <p class="resultado__nota">
+                <strong>92</strong> <span class="total__questoes">/ 100</span>
+              </p>
+            </div>
+
+            <div class="categoria resultado__verbal">
+              <div class="classe__box">
                 <img
                   class="resultado__icon"
                   src="./assets/images/icon-verbal.svg" />
-                <p class="resultado__categoria">Verbal</p>
-                <p class="resultado__nota"><strong>61</strong> / 100</p>
+                <p class="resultado__questoes">Verbal</p>
               </div>
-  
-              <div class="categoria   resultado__visual">
+              <p class="resultado__nota">
+                <strong>61</strong> <span class="total__questoes">/ 100</span>
+              </p>
+            </div>
+
+            <div class="categoria resultado__visual">
+              <div class="classe__box">
                 <img
                   class="resultado__icon"
                   src="./assets/images/icon-visual.svg" />
-                <p class="resultado__categoria">Visual</p>
-                <p class="resultado__nota"><strong>72</strong> / 100</p>
+                <p class="resultado__questoes">Visual</p>
               </div>
-  
+              <p class="resultado__nota">
+                <strong>72</strong> <span class="total__questoes">/ 100</span>
+              </p>
             </div>
-            <button href="#" class="botao">Continue</button>
+          </div>
+          <button href="#" class="botao">Continue</button>
         </section>
       </div>
-
-    </body>
+    </div>
+  </body>
 </html>

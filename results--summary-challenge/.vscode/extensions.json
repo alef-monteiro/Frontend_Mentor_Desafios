@@ -1,5 +1,6 @@
 {
   "recommendations": [
-    "hoovercj.vscode-power-mode"
+    "hoovercj.vscode-power-mode",
+    "tht13.html-preview-vscode"
   ]
 }

@@ -4,5 +4,6 @@
         "scrollbar.shadow": "#00000000"
     },
     "dimmer.enabled": true,
-    "dimmer.toggleDimmerCommandScope": "workspace"
+    "dimmer.toggleDimmerCommandScope": "workspace",
+    "livePreview.defaultPreviewPath": "/meu projeto/index.html"
 }
