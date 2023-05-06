@@ -186,7 +186,6 @@ strong {
   border: none;
   padding: 6%;
   border-radius: 50px;
-  transition: background-color 0.2s ease-in-out;
 }
 
 .botao:hover {
@@ -197,15 +196,10 @@ strong {
     hsl(241, 81%, 54%)
   );
   cursor: pointer;
-
-  transition: box-shadow 0.3s ease-in-out;
 }
 
 .botao:active {
-  /* box-shadow: 0px 0px 10px hsl(241, 81%, 54%); */
-
-  box-shadow: 0 0 10px hsla(252, 100%, 67%, 0.473),
-    0 0 20px hsla(241, 81%, 54%, 0.34), 0 0 30px rgba(0, 0, 255, 0.5);
+  background: hsla(241, 81%, 54%, 0.792);
 }
 
 /* CATEGORIA RESULTADOS COLOCANDO CORES ---------------------------------------------------------------------------------------*/
@@ -216,7 +210,7 @@ strong {
 }
 .resultado__memory {
   color: hsl(39, 100%, 56%);
-  background-color: hsl(39, 100%, 56%, 0.191);
+  background-color: hsla(39, 100%, 56%, 0.128);
 }
 .resultado__verbal {
   color: hsl(166, 100%, 37%);
@@ -225,4 +219,151 @@ strong {
 .resultado__visual {
   color: hsl(234, 85%, 45%);
   background-color: hsl(234, 85%, 45%, 0.191);
+}
+
+/* RESPONSIVIDADE- TABLEET --------------------------------------------------------------------------- */
+
+@media (max-width: 800px) and (min-width: 550px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .resultado__box {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+
+    gap: 10%;
+  }
+  .resultado__descricao-box {
+    gap: 5%;
+    margin-bottom: 10%;
+  }
+
+  /* =================== TEXTO REALIZAÇÃO =================== */
+
+  .resultado__titulo {
+    font-size: 2em;
+  }
+  .resultado__classificacao {
+    font-size: 2em;
+  }
+  .resultado__descricao {
+    font-size: 1.5em;
+    color: #ffffffa7;
+  }
+
+  /* resultado circulo */
+  .resultado__total {
+    font-size: 5em;
+  }
+  .resultado__qtd {
+    font-size: 1.5em;
+  }
+
+  /* =================== SUMARIO RESPONSIVE ========== */
+
+  .sumario__box {
+    gap: 5%;
+    padding: 5%;
+    height: 100%;
+    font-size: 1.5em;
+  }
+  .resultado__pontos {
+    gap: 5%;
+    /* justify-content: space-evenly; */
+    height: 100%;
+    font-size: 1em;
+  }
+  .categoria {
+    padding: 3%;
+  }
+  .resultado__icon {
+    width: 1.5em;
+  }
+  .botao {
+    padding: 5%;
+    font-size: 1em;
+  }
+}
+
+/* RESPONSIVIDADE- MOBILE --------------------------------------------------------------------------- */
+
+@media (max-width: 549px) and (min-width: 360px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 0;
+  }
+
+  .resultado__box {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+
+    padding: 10%;
+  }
+  .resultado__descricao-box {
+    gap: 5%;
+  }
+
+  /* =================== TEXTO REALIZAÇÃO =================== */
+
+  .resultado__titulo {
+    font-size: 1em;
+  }
+
+  .circulo {
+    width: 140px;
+    height: 140px;
+  }
+  .resultado__total {
+    font-size: 2.5em;
+  }
+  .resultado__qtd {
+    font-size: 1em;
+  }
+
+  .resultado__classificacao {
+    font-size: 1.5em;
+  }
+  .resultado__descricao {
+    font-size: 1em;
+    color: #ffffffa7;
+  }
+  /* =================== SUMARIO RESPONSIVE ========== */
+
+  .sumario__box {
+    gap: 5%;
+    padding: 5%;
+    height: 100%;
+    font-size: 1em;
+  }
+  .resultado__pontos {
+    gap: 5%;
+    justify-content: space-evenly;
+    height: 100%;
+    font-size: 1em;
+  }
+  .categoria {
+    padding: 3%;
+  }
+  .resultado__icon {
+    width: 1.5em;
+  }
+  .botao {
+    padding: 5%;
+    font-size: 1em;
+  }
+  .botao:active {
+    background-color: hsl(252, 100%, 67%);
+  }
 }
