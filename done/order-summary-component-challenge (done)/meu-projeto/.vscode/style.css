@@ -1,0 +1,181 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url(https://raw.githubusercontent.com/gist/alef-monteiro/8289428124896252292191391af8905b/raw/04295202eece2ff1517db4df594b75456ca5038b/pattern-background-desktop.svg)
+    no-repeat;
+  background-color: #e0e8ff;
+}
+
+.container {
+  width: 420px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  overflow: hidden;
+  position: relative;
+  font-size: 1rem;
+  font-family: "Red Hat Display", sans-serif;
+  line-height: 1.5;
+  box-shadow: 0px 10px 20px 0px #0000008e;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+.container:hover {
+  box-shadow: 0px 0px 5px 0px #a2a2a2;
+  transition: box-shadow 0.08s ease-in-out;
+}
+
+/* Imagem --------------------------------------------------------------------------------------------------------------- */
+.apresentacao__imagem {
+  width: 100%;
+}
+
+/* Apresentacao --------------------------------------------------------------------------------------------------------------- */
+.apresentacao__informacao {
+  text-align: center;
+  display: flex;
+  flex-flow: column wrap;
+  padding: 10%;
+  gap: 1.5rem;
+}
+
+.apresentacao__box {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apresentacao__titulo {
+  color: #1f2f56;
+  font-weight: 900;
+}
+
+.apresentacao__descricao {
+  color: #7280a7;
+}
+
+/* Caixa de Plano --------------------------------------------------------------------------------------------------------------- */
+.produto__caixa {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #f5f7ff;
+  padding: 8% 6%;
+  border-radius: 10px;
+}
+
+.produto__valores__caixa {
+  display: flex;
+  align-items: center;
+}
+
+.preço__box {
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.valor__classe {
+  font-size: 1rem;
+  font-weight: 700;
+}
+.produto__valor {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.icone__musica {
+  margin-right: 1.5em;
+}
+
+.muda__link:link,
+.muda__link:visited {
+  color: #3829e0;
+  font-weight: 700;
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.muda__link:hover,
+.muda__link:active {
+  text-decoration: underline;
+  color: #1f2f56;
+}
+/* - Weights: 500, 700, 900 */
+
+/* Butão --------------------------------------------------------------------------------------------------------------- */
+.compra__pagamento,
+.compra__pagamento:visited {
+  padding: 5%;
+  border-radius: 10px;
+  border: none;
+  background-color: #3829e0;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.compra__pagamento:hover {
+  background-color: #6d61ef;
+  box-shadow: 0px 15px 20px 0px #bdbdbd;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.compra__pagamento:active {
+  background-color: #483eb7;
+  box-shadow: 0px 5px 10px 0px #4a4a4a;
+  transition: box-shadow 0.08s ease-in-out;
+}
+
+.compra__cancelamento:link,
+.compra__cancelamento:visited {
+  text-decoration: none;
+  color: #7280a7;
+  font-weight: 700;
+  font-size: 0.8rem;
+}
+
+.compra__cancelamento:active,
+.compra__cancelamento:hover {
+  color: #1f2f56;
+}
+
+/* Responsividade --------------------------------------------------------------------------------- */
+
+@media (max-width: 450px) {
+  .container {
+    width: 90%;
+  }
+
+  .produto__valores__caixa {
+    display: flex;
+    align-items: center;
+  }
+
+  .preço__box {
+    display: flex;
+    flex-flow: column nowrap;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .valor__classe {
+    font-size: 0.8rem;
+    font-weight: 700;
+  }
+  .produto__valor {
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: #7280a7;
+  }
+}

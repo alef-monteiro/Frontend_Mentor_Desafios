@@ -1,0 +1,180 @@
+/* 
+font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container__parent {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background-color: #f2ebe3;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  background-color: #ffffff;
+  width: 700px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.produto__apresentacao {
+  display: flex;
+  flex-direction: column;
+  gap: 7%;
+  padding: 10%;
+}
+
+/* Imagens */
+.produto__imagem__mobile {
+  display: none;
+}
+
+.produto__imagem {
+  width: 100%;
+  height: 100%;
+}
+/* Texto */
+.produto__tipo {
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2rem;
+  color: #6c7289;
+}
+
+.produto__nome {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 0.9;
+  color: #1c232b;
+}
+
+.produto__descricao {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: 500;
+  color: #6c7289;
+}
+
+/* Valores */
+.produto__valores {
+  display: flex;
+  justify-items: flex-start;
+  align-items: center;
+  gap: 8%;
+}
+
+.valor__atual {
+  font-family: "Fraunces", serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #3c8067;
+}
+
+.valor__velho {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.85rem;
+  text-decoration: line-through;
+  font-weight: 500;
+  color: #6c7289;
+}
+
+/* Botão */
+.botão {
+  cursor: pointer;
+  display: flex;
+  border-radius: 8px;
+  border: 5px solid #3c8067;
+  justify-content: center;
+  padding: 5.5%;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+
+  color: #ffffff;
+  background-color: #3c8067;
+}
+
+.botão:hover {
+  background-color: #2e6450;
+  border: 5px solid #2e6450;
+}
+
+.botão:active {
+  font-weight: 500;
+}
+
+.icone__compra {
+  margin-right: 10px;
+}
+
+/* Responsividade */
+
+@media (min-width: 300px) and (max-width: 800px) {
+  .container__parent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  /* imagem responsive */
+  .produto__imagem {
+    display: none;
+  }
+  .produto__imagem__mobile {
+    display: block;
+    width: 100%;
+  }
+
+  /* texto */
+  .produto__apresentacao {
+    display: flex;
+    flex-direction: column;
+    padding: 5%;
+    gap: 20px;
+  }
+
+  .produto__tipo {
+    font-size: 0.7rem;
+    letter-spacing: 5px;
+  }
+
+  .produto__nome {
+    font-size: 1.8rem;
+  }
+
+  .produto__descricao {
+    font-size: 0.83rem;
+  }
+
+  /* Valores */
+  .produto__valores {
+    display: flex;
+    justify-content: center;
+  }
+  .valor__atual {
+    font-size: 1.8rem;
+  }
+
+  .valor__velho {
+    font-size: 0.83rem;
+  }
+}
