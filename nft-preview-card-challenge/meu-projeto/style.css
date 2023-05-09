@@ -140,6 +140,6 @@
   color: #fff;
 }
 .criador__nome:hover {
-  color: hsl(178, 100%, 50%);
+  color: hsla(178, 100%, 50%, 0.988);
   cursor: pointer;
 }
