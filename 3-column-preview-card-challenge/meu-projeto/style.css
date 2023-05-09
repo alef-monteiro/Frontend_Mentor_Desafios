@@ -1,0 +1,149 @@
+:root {
+    font-size: 15px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.parent__container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 95%);
+
+}
+
+.container {
+    height: f;
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    box-shadow: 5px 10px 5px 5px #88888859;
+}
+
+/* ============================================================= */
+.sedans__box {
+    background: hsl(31, 77%, 52%);
+}
+
+.produto__icone {
+    grid-area: "icone";
+}
+
+.produto__modelo {
+    grid-area: "modelo";
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.produto__descricao {
+    grid-area: "descricao";
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.botao__sedans {
+    padding: 5% 15%;
+    border-radius: 50px;
+    grid-area: "botao";
+    background-color: hsl(0, 0%, 95%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: hsl(31, 77%, 52%);
+}
+
+
+/* ============================================================= */
+.suvs__box {
+    background: hsl(184, 100%, 22%);
+}
+
+.produto__icone {
+    grid-area: "icone";
+}
+
+.produto__modelo {
+    grid-area: "modelo";
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.produto__descricao {
+    grid-area: "descricao";
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+
+.botao__suvs {
+    padding: 5% 15%;
+    border-radius: 50px;
+    grid-area: "botao";
+    background-color: hsl(0, 0%, 95%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    color: hsl(184, 100%, 22%);
+    -o-border-radius: 50px;
+}
+
+/* ============================================================= */
+
+.luxury__box {
+    background: hsl(179, 100%, 13%);
+}
+
+.produto__icone {
+    grid-area: "icone";
+}
+
+.produto__modelo {
+    grid-area: "modelo";
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.produto__descricao {
+    grid-area: "descricao";
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+.botao__luxury {
+    padding: 5% 15%;
+    border-radius: 50px;
+    grid-area: "botao";
+    background-color: hsl(0, 0%, 95%);
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    color: hsl(179, 100%, 13%);
+}
+
+
+/* GERAIS =================================================== */
+.botao {
+    border: hsl(0, 0%, 95%) 2px solid;
+    text-align: center;
+}
+
+.botao:hover {
+    background-color: #88888800;
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.box {
+    padding: 40px;
+    grid-template-areas:
+        "icone"
+        "modelo"
+        "descricao"
+        "botao";
+
+}
