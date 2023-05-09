@@ -40,17 +40,17 @@
 
 /* Apresentacao --------------------------------------------------------------------------------------------------------------- */
 .apresentacao__informacao {
-  text-align: center;
-  display: flex;
-  flex-flow: column wrap;
-  padding: 10%;
   gap: 1.5rem;
+  padding: 10%;
+  display: flex;
+  text-align: center;
+  flex-flow: column wrap;
 }
 
 .apresentacao__box {
+  gap: 20px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
 }
 
 .apresentacao__titulo {
@@ -67,9 +67,9 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #f5f7ff;
   padding: 8% 6%;
   border-radius: 10px;
+  background-color: #f5f7ff;
 }
 
 .produto__valores__caixa {
@@ -79,8 +79,8 @@
 
 .preço__box {
   display: flex;
-  flex-flow: column nowrap;
   text-align: center;
+  flex-flow: column nowrap;
 }
 
 .valor__classe {
@@ -107,21 +107,21 @@
 
 .muda__link:hover,
 .muda__link:active {
-  text-decoration: underline;
   color: #1f2f56;
+  text-decoration: underline;
 }
 /* - Weights: 500, 700, 900 */
 
 /* Butão --------------------------------------------------------------------------------------------------------------- */
 .compra__pagamento,
 .compra__pagamento:visited {
-  padding: 5%;
-  border-radius: 10px;
-  border: none;
-  background-color: #3829e0;
-  font-weight: 700;
-  color: #fff;
   cursor: pointer;
+  color: #fff;
+  font-weight: 700;
+  padding: 5%;
+  border: none;
+  border-radius: 10px;
+  background-color: #3829e0;
   transition: box-shadow 0.3s ease-in-out;
 }
 
@@ -139,10 +139,10 @@
 
 .compra__cancelamento:link,
 .compra__cancelamento:visited {
-  text-decoration: none;
   color: #7280a7;
   font-weight: 700;
   font-size: 0.8rem;
+  text-decoration: none;
 }
 
 .compra__cancelamento:active,
@@ -164,8 +164,8 @@
 
   .preço__box {
     display: flex;
-    flex-flow: column nowrap;
     text-align: center;
+    flex-flow: column nowrap;
     line-height: 2;
   }
 
