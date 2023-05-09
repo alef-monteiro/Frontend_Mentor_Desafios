@@ -1,5 +1,7 @@
 :root {
     font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+
 }
 
 * {
@@ -8,6 +10,38 @@
     box-sizing: border-box;
 }
 
+
+/* SEDANS============================================================= */
+
+.sedans__box {
+    background: hsl(31, 77%, 52%);
+}
+
+.botao__sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+/* SUS============================================================= */
+
+.suvs__box {
+    background: hsl(184, 100%, 22%);
+}
+
+.botao__suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+/* LUXURY============================================================= */
+
+.luxury__box {
+    background: hsl(179, 100%, 13%);
+}
+
+.botao__luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+/* CONFIGURAÇÕES GERAIS =================================================== */
 .parent__container {
     width: 100%;
     height: 100vh;
@@ -15,135 +49,193 @@
     align-items: center;
     justify-content: center;
     background-color: hsl(0, 0%, 95%);
-
 }
 
 .container {
-    height: f;
-    width: 800px;
+    height: fit-content;
+    width: 880px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    box-shadow: 5px 10px 5px 5px #88888859;
+    box-shadow: 5px 10px 15px 2px #88888859;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    overflow: hidden;
 }
 
-/* ============================================================= */
-.sedans__box {
-    background: hsl(31, 77%, 52%);
+/* CONTEÚDO DO CONTAINER ======== */
+.box__produto {
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 5em;
+}
+
+.bloco__normal {
+    display: flex;
+    gap: 5em;
 }
 
 .produto__icone {
-    grid-area: "icone";
+    display: inline;
+    width: min-content;
+}
+
+.bloco__info {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
 }
 
 .produto__modelo {
-    grid-area: "modelo";
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 2.5rem;
     text-transform: uppercase;
     color: hsl(0, 0%, 95%);
 }
 
 .produto__descricao {
-    grid-area: "descricao";
     color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
 }
 
-.botao__sedans {
-    padding: 5% 15%;
-    border-radius: 50px;
-    grid-area: "botao";
-    background-color: hsl(0, 0%, 95%);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    color: hsl(31, 77%, 52%);
-}
+/* BOTÃO ====== */
 
-
-/* ============================================================= */
-.suvs__box {
-    background: hsl(184, 100%, 22%);
-}
-
-.produto__icone {
-    grid-area: "icone";
-}
-
-.produto__modelo {
-    grid-area: "modelo";
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-}
-
-.produto__descricao {
-    grid-area: "descricao";
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
-
-.botao__suvs {
-    padding: 5% 15%;
-    border-radius: 50px;
-    grid-area: "botao";
-    background-color: hsl(0, 0%, 95%);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    color: hsl(184, 100%, 22%);
-    -o-border-radius: 50px;
-}
-
-/* ============================================================= */
-
-.luxury__box {
-    background: hsl(179, 100%, 13%);
-}
-
-.produto__icone {
-    grid-area: "icone";
-}
-
-.produto__modelo {
-    grid-area: "modelo";
-    text-transform: uppercase;
-    color: hsl(0, 0%, 95%);
-}
-
-.produto__descricao {
-    grid-area: "descricao";
-    color: hsla(0, 0%, 100%, 0.75);
-}
-
-.botao__luxury {
-    padding: 5% 15%;
-    border-radius: 50px;
-    grid-area: "botao";
-    background-color: hsl(0, 0%, 95%);
-    -webkit-border-radius: 50px;
-    -moz-border-radius: 50px;
-    -ms-border-radius: 50px;
-    -o-border-radius: 50px;
-    color: hsl(179, 100%, 13%);
-}
-
-
-/* GERAIS =================================================== */
 .botao {
+    background-color: hsl(0, 0%, 95%);
     border: hsl(0, 0%, 95%) 2px solid;
     text-align: center;
+    white-space: nowrap;
+    width: min-content;
+    padding: 5% 15%;
+    border-radius: 50px;
+
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
 }
 
-.botao:hover {
+.botao:hover,
+.botao:active {
     background-color: #88888800;
     color: hsla(0, 0%, 100%, 0.75);
     cursor: pointer;
 }
 
-.box {
-    padding: 40px;
-    grid-template-areas:
-        "icone"
-        "modelo"
-        "descricao"
-        "botao";
+.tablet__bloco {
+    display: none;
+}
+
+
+/* RESPONSIVIDADE MEDIAQUERY======================================================================== */
+
+/* ========= tablet ========== */
+@media (max-width: 900px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .box__produto {
+        padding: 5%;
+        display: flex;
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    .bloco__info {
+        display: flex;
+        flex-direction: column;
+        gap: 3em;
+    }
+
+    .bloco__normal {
+        display: none;
+    }
+
+    .tablet__bloco {
+        display: flex;
+        align-items: center;
+    }
+
+    .produto__icone {
+        width: 20%;
+        margin-right: 10%;
+    }
+
+    .produto__modelo {
+        font-family: 'Big Shoulders Display', cursive;
+        font-size: 3rem;
+        text-transform: uppercase;
+        color: hsl(0, 0%, 95%);
+    }
+
+    .produto__descricao {
+        color: hsla(0, 0%, 100%, 0.75);
+        font-size: 1.5rem;
+        line-height: 1.5;
+    }
+
+    .botao {
+        width: auto;
+        font-size: 2rem;
+        padding: 1%;
+        border: 2px solid hsl(0, 0%, 95%);
+        border-radius: 20px;
+        -webkit-border-radius: 20px;
+        -moz-border-radius: 20px;
+        -ms-border-radius: 20px;
+        -o-border-radius: 20px;
+    }
 
 }
+
+/* ========== MOBILE ========== */
+@media (max-width: 810px) {
+
+    .container {
+        width: 80%;
+    }
+}
+
+@media (max-width: 575px) {
+    .box__produto {
+        padding: 11%;
+        gap: 1em;
+    }
+
+    .bloco__info {
+        gap: 1em;
+    }
+
+    .tablet__bloco {
+        display: block;
+        flex-direction: column;
+        gap: 1em;
+    }
+
+    .produto__icone {
+        width: min-content;
+    }
+
+    .produto__modelo {
+        font-size: 2rem;
+    }
+
+    .produto__descricao {
+        font-size: .8rem;
+        line-height: 1.5;
+    }
+
+    .botao {
+
+        font-size: .8rem;
+        padding: 1%;
+    }
+}
+
+*/
