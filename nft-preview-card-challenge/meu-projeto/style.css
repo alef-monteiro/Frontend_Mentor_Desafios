@@ -66,10 +66,12 @@
   margin-bottom: 8%;
   font-size: 1.1rem;
 }
+
 .produto__nome:hover {
   cursor: pointer;
   color: hsl(178, 100%, 50%);
 }
+
 .produto__descricao {
   color: #8bacda;
   font-size: 0.9rem;
@@ -84,11 +86,13 @@
   justify-content: space-between;
   margin-bottom: 8%;
 }
+
 .produto__valor {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
+
 .produto__validade {
   display: flex;
   align-items: center;
@@ -97,11 +101,10 @@
 
 .valor:link,
 .valor:visited {
-  color: hsl(178, 100%, 50%);
-
   font-weight: 600;
   font-size: 0.85rem;
   text-decoration: none;
+  color: hsl(178, 100%, 50%);
 }
 .validade {
   color: #8bacda;
