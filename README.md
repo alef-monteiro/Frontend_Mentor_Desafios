@@ -36,5 +36,4 @@ yarn start
 
 Álef Nunes Monteiro
 
-https://www.linkedin.com/in/wmazoni
-
+(https://www.linkedin.com/in/%C3%A1lef-monteiro/)
